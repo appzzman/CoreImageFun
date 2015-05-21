@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhK-NU-384">
+                                <rect key="frame" x="16" y="438" width="568" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="Uym-ty-HPY"/>
+                                </constraints>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uwfcs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ILt-F7-Lzm">
+                                <rect key="frame" x="16" y="0.0" width="568" height="438"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ILt-F7-Lzm" secondAttribute="trailing" id="5wH-3f-i4I"/>
+                            <constraint firstItem="ILt-F7-Lzm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="684-kg-SBq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AhK-NU-384" secondAttribute="trailing" id="9gR-bG-NZ8"/>
+                            <constraint firstItem="ILt-F7-Lzm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="M2s-pg-eCO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AhK-NU-384" secondAttribute="bottom" id="jPp-yo-kDO"/>
+                            <constraint firstItem="AhK-NU-384" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xvc-om-v1q"/>
+                            <constraint firstItem="ILt-F7-Lzm" firstAttribute="bottom" secondItem="AhK-NU-384" secondAttribute="top" id="zj9-rU-FUS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ILt-F7-Lzm" id="mbW-Ck-80e"/>
+                        <outlet property="pickerView" destination="AhK-NU-384" id="fE0-yE-xUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="uwfcs.jpg" width="3664" height="2748"/>
+    </resources>
+</document>
